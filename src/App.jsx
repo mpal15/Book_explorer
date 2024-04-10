@@ -101,7 +101,7 @@ function App() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
   <div>
     <a
-      href={book.saleInfo.buyLink}
+      href={book.saleInfo?.buyLink}
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out"
