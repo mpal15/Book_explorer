@@ -69,6 +69,7 @@ function App() {
               {selectedBook && selectedBook.id === book.id && (
                 <div className="mt-4">
                   <p className="text-base text-gray-700 mb-2">{book.volumeInfo.description}</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <a
                       href={book.saleInfo?.buyLink}
@@ -82,6 +83,7 @@ function App() {
                   <div>
                     <label>Published By:</label>
                     <h4 className="text-base font-semibold text-gray-700">{book.volumeInfo.publisher}</h4>
+                  </div>
                   </div>
                 </div>
               )}
