@@ -1,7 +1,7 @@
 
-    ![Screenshot (121)](https://github.com/mpal15/Book_explorer/assets/62149463/b4e4802b-20f4-42e8-9e65-205dc8a6bb87)
 
- 
+ ![Screenshot (121)](https://github.com/mpal15/Book_explorer/assets/62149463/e134e3da-b525-47c9-b96d-573d2efc5b5f)
+
 
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
