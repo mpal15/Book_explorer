@@ -1,11 +1,18 @@
-# React + Vite
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Vite
+- React.js
+- Tailwind CSS
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## <a name="features">🔋 Features</a>
+ ● Book Listing: Display books with details such as cover image, title, author, and
+rating.
+● Basic Filtering: Implement functionality to filter books by genre or author.
+● Responsive Design: Ensure the app is fully responsive and provides a seamless
+experience across all devices.
+● API Integration: Use the provided API endpoint to fetch and display book data.
+● Detail View: Implement a detailed view for each book, showcasing more
+information when a book is selected.
 ## <a name="quick-start">🤸 Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
