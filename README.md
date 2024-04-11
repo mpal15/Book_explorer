@@ -35,7 +35,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone [https://github.com/mpal15/Book_explorer.git]
-cd brainwave
+cd book_explorer
 ```
 
 **Installation**
