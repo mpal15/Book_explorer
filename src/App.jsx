@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -33,7 +34,7 @@ function App() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 m-5">
           {books.filter(book =>
             book.volumeInfo.authors.toString().toLowerCase().includes(query.toLowerCase()) ||
             (book.volumeInfo.categories && book.volumeInfo.categories.length > 0 && book.volumeInfo.categories[0].toString().toLowerCase().includes(query.toLowerCase()))
@@ -46,6 +47,24 @@ function App() {
               />
               <h3 className="text-xl font-semibold text-gray-800">{book.volumeInfo.title}</h3>
               <p className="text-base text-gray-600">{book.volumeInfo?.subtitle}</p>
+              <p className="text-base text-gray-600 flex items-center">
+              <span className="mr-1">{book.volumeInfo?.averageRating || "0"}</span>
+                <span className="text-yellow-500">
+                  <svg
+                    className="h-4 w-4 fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm4.38 14.19L11 12.62l-3.38 1.57a1.5 1.5 0 01-2.12-1.56L4.8 10.2l-2.62-2.62a1.5 1.5 0 01.98-2.56l3.47-.5L10 2.26a1.5 1.5 0 011.43 0l1.37.65 3.47.5a1.5 1.5 0 01.98 2.56l-2.62 2.62 1.57 3.38a1.5 1.5 0 01-2.18 1.69z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </span>
+                <span className="ml-1">Rating</span>
+              </p>
               <p className="text-base text-gray-700">by {book.volumeInfo.authors.join(', ')}</p>
               {selectedBook && selectedBook.id === book.id && (
                 <div className="mt-4">
