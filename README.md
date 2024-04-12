@@ -56,4 +56,4 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to view the 
 
 OR
 ## check out deploy link
-[https://book-explorer-red.vercel.app/]
+(https://book-explorer-red.vercel.app/)
